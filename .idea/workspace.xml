@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="409d16b3-2232-43a3-89bf-88116f233935" name="Changes" comment="ajustes">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/local/docker-compose-sa.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/local/down-compose.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/local/up-compose.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Billing.postman_collection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/entidades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/feedback.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/payInBulk.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/BillingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dao/BillDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dao/impl/BillDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/BillLookupResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/BillingImportHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/BillingImportHistoryLookupResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/UserAuthenticatedJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/dto/UserLookupResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/entity/BillEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/entity/BillingImportHistoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/enums/BillingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/enums/ImportStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/enums/OperationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/record/CSVBills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/record/PayInBulkInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/record/PayInBulkOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/record/PayInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/record/TotalBillsPeriodInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/record/TotalBillsPeriodOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/repository/BillRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/repository/BillingImportHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/service/BillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/service/BillingImportHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/service/impl/BillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/service/impl/BillingImportHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/strategy/BillStategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/usecase/CsvBillProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/domain/usecase/impl/CsvBillProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/UserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/auth/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/auth/PasswordConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/auth/UserAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/auth/UserAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/controller/BillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/pageable/CustomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/pageable/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/pageable/Pagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/security/SpringSecurityAuditorAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/infrastructure/web/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/utils/CsvWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/utils/FormatterUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/utils/MessageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/billing/utils/ObjectConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initial_create_tables.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MayconYamamotto&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MayconYamamotto/totvs.git&quot;,
+    &quot;accountId&quot;: &quot;051acb8e-ed02-42ca-9569-16c077bbcca4&quot;
+  }
+}</component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="MavenRunConfiguration" name="billing-app-backend [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile]" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2j9WNBHQEveQ9MosRSmkPVUdZ38" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Teste.executor": "Run",
+    "Docker.local/docker-compose-sa.yml.postgres: Compose Deployment.executor": "Run",
+    "Docker.local/docker-compose-sa.yml: Compose Deployment.executor": "Run",
+    "Maven.billing-app-backend [clean].executor": "Run",
+    "Maven.billing-app-backend [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BillingApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/www/billing-app-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\billing-app-backend\docs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\www\billing-app-backend\docker\local" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.billing.domain.record" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BillingApplication">
+    <configuration name="BillingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="billing-app-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.billing.BillingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="local/docker-compose-sa.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker/local/docker-compose-sa.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="local/docker-compose-sa.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/local/docker-compose-sa.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.local/docker-compose-sa.yml: Compose Deployment" />
+        <item itemvalue="Docker.local/docker-compose-sa.yml.postgres: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="409d16b3-2232-43a3-89bf-88116f233935" name="Changes" comment="" />
+      <created>1720799730683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720799730683</updated>
+      <workItem from="1720799731846" duration="386000" />
+      <workItem from="1720821478204" duration="1206000" />
+      <workItem from="1720823115837" duration="1931000" />
+      <workItem from="1720825395869" duration="2738000" />
+      <workItem from="1720831781448" duration="14088000" />
+      <workItem from="1720910465718" duration="9759000" />
+      <workItem from="1720995258466" duration="4943000" />
+      <workItem from="1721076772633" duration="15198000" />
+      <workItem from="1721104972671" duration="7811000" />
+      <workItem from="1721112912793" duration="46000" />
+    </task>
+    <task id="LOCAL-00001" summary="Docker compose">
+      <option name="closed" value="true" />
+      <created>1720832072402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720832072402</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Docker compose">
+      <option name="closed" value="true" />
+      <created>1720833399561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720833399561</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1720836084211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720836084211</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1720850080647</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720850080647</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1720850684872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720850684872</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1720853130390</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720853130390</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1720918366564</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720918366564</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1720921301790</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720921301790</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721083644400</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721083644400</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721083829723</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721083829723</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721084220996</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721084220996</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721084753461</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721084753461</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721084969019</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721084969019</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721086238851</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721086238851</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721086435804</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721086435804</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721087313150</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721087313150</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721107914706</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721107914706</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721108001474</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721108001474</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721108868660</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721108868660</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721111807471</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1721111807471</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721111904219</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721111904219</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721112486598</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721112486598</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1721112800711</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721112800711</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Docker compose" />
+    <MESSAGE value="ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

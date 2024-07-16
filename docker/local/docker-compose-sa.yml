@@ -1,0 +1,28 @@
+x-common-variables: &environments
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_DB: billing
+  POSTGRES_HOST: postgres
+  POSTGRES_PORT: 5432
+
+volumes:
+  postgres_data:
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:15.7
+    restart: always
+    environment:
+      <<: *environments
+      TZ: "GMT-3"
+      PGTZ: "GMT-3"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - billing
+
+networks:
+  billing:
